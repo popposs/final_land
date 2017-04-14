@@ -1,4 +1,4 @@
-#include "level_main.h"
+#include "level.h"
 
 
 void system_events(){
@@ -6,6 +6,10 @@ void system_events(){
 }
 
 void init_map(){
+
+}
+
+void draw_map(){
 
 }
 

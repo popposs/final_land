@@ -13,8 +13,6 @@ int window_y = 800;
 sf::Event event;
 sf::RenderWindow window(sf::VideoMode(window_x, window_y), "Level");
 
-Stage stage = Stage(window_x, window_y);
-
 void draw_all();
 
 void init_map();
@@ -35,12 +33,14 @@ int main(){
 		while(window.pollEvent(event)){
 			system_events();
 
-			if(event.type == sf::Event::KeyPressed)
-				key_pressed_events();
-			if(event.type == sf::Event::KeyReleased)
-				key_released_events();
+		//	if(event.type == sf::Event::KeyPressed)
+	//			key_pressed_events();
+		//	if(event.type == sf::Event::KeyReleased)
+	//			key_released_events();
 		}
 		draw_all();
 	}
 	return EXIT_SUCCESS;
 };
+
+#endif
